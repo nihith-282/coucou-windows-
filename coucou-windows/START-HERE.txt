@@ -1,0 +1,14 @@
+COUCOU FOR WINDOWS — standalone build
+=====================================
+Needs: Rust (rustup.rs), Node 20+, MSVC Build Tools ("Desktop development with C++").
+WebView2 ships with Windows 10/11.
+
+  1. Open PowerShell in this folder
+  2. .\build.ps1          (installer lands in .\release\)
+     .\build.ps1 -Dev     (live dev build)
+  3. Tray icon -> Settings... -> Claude Code -> Install hooks...
+
+The installer is unsigned, so Defender/SmartScreen may complain (known false positive).
+Running target\release\coucou.exe directly works too, no install needed.
+
+Code: MIT. Name, Mochi, icon, sounds and media: (c) Louis Raille — see LICENSE-ASSETS.md.
